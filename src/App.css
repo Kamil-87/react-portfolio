@@ -1,0 +1,16 @@
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  display: inline-block;
+  transform: scale(1);
+  transition: transform ease-in-out 0.2s;
+}
+
+h1:hover {
+  transform: scale(1.25);
+}

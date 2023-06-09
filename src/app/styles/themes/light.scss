@@ -1,0 +1,10 @@
+.light_theme {
+    --main: #FBF4F4;
+    --secondary: #424242;
+    --accent: #2E2E2E;
+
+    --bg: var(--main);
+    --text: var(--secondary);
+    --bg-inverse: var(--accent);
+    --text-inverse: var(--main);
+}

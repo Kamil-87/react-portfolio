@@ -1,0 +1,13 @@
+.Section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    @media (min-width: 768px) {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}
+
+.accent {
+    background-color: var(--accent);
+}

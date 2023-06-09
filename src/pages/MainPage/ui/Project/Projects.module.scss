@@ -1,0 +1,21 @@
+.Projects {
+
+}
+
+.list {
+    width: 100%;
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+
+    @media (min-width: 768px) {
+        grid-gap: 2.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    }
+}
+
+.img {
+    min-height: 15rem;
+    width: 100%;
+    object-fit: cover;
+}

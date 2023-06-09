@@ -1,0 +1,89 @@
+@import "reset";
+@import "variables";
+@import "themes/light";
+@import "themes/dark";
+
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    background: var(--bg);
+    font: var(--font);
+    color: var(--text);
+}
+
+.body {
+    font-size: 10px;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.header {
+    background: var(--bg-inverse);
+    color: var(--text-inverse);
+    width: 100%;
+    height: var(--header-height);
+
+    .header__inner {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.footer {
+    background: var(--bg-inverse);
+    color: var(--text-inverse);
+    width: 100%;
+    padding: 2rem 3rem;
+
+    .footer__inner {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.container {
+    max-width: 1780px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    @media (min-width: 768px) {
+        padding: 0 30px;
+    }
+}
+
+*::-webkit-scrollbar {
+    width: 12px;               /* ширина scrollbar */
+    height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--light-bg);        /* цвет дорожки */
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--icon);    /* цвет плашки */
+    border-radius: 20px;       /* закругления плашки */
+    border: 1px solid var(--accent);  /* padding вокруг плашки */
+}
+
+.app *::-webkit-scrollbar {
+    width: 12px;               /* ширина scrollbar */
+    height: 8px;
+}
+
+.app *::-webkit-scrollbar-track {
+    background: var(--card-bg);        /* цвет дорожки */
+}
+
+.app *::-webkit-scrollbar-thumb {
+    background-color: var(--inverted-primary-color);    /* цвет плашки */
+    border-radius: 20px;       /* закругления плашки */
+    border: 2px solid var(--primary-color);  /* padding вокруг плашки */
+}
+

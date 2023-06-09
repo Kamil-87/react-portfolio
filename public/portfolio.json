@@ -1,0 +1,36 @@
+{
+    "about": {
+        "name": "Kamil Kuchaev",
+        "title": "Front-end Developer",
+        "description": "text",
+        "social": [
+            {
+                "name": "github",
+                "url": "https://github.com/Kamil-87"
+            }
+        ],
+        "image": "kamil-kuchaev.jpg"
+    },
+    "skills": [
+        {
+            "name": "HTML 5",
+            "class": "html5"
+        },
+        {
+            "name": "CSS 3",
+            "class": "css3"
+        },
+        {
+            "name": "JavaScript",
+            "class": "javascript"
+        },
+        {
+            "name": "TypeScript",
+            "class": "typescript"
+        },
+        {
+            "name": "Scss",
+            "class": "scss"
+        }
+    ]
+}

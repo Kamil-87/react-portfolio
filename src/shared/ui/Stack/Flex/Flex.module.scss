@@ -31,7 +31,11 @@
 }
 
 .directionRow {
-    flex-direction: row;
+    flex-direction: column;
+
+    @media  (min-width: 768px) {
+        flex-direction: row;
+    }
 }
 
 .directionColumn {

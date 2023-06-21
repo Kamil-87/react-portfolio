@@ -1,9 +1,9 @@
-// import { Promo } from './Promo/Promo';
+import { Promo } from './Promo/Promo';
 import { About } from './About/About';
 import { Experience } from './Experience/Experience';
 import { Skills } from './Skills/Skills';
 import { Projects } from './Project/Projects';
-import { memo, useEffect, useState } from 'react';
+import { memo, useEffect, useRef, useState } from 'react';
 import { AboutSchema, ProfileSchema } from '../model/types/MainPageShema';
 
 const initAbout: AboutSchema = {
@@ -17,7 +17,11 @@ export const MainPage = memo(() => {
     const [profile, setProfile] = useState<ProfileSchema>({
         about: initAbout,
         skills: [],
+        experiences: [],
+        projects: [],
     });
+
+    const projectRef = useRef<HTMLDivElement>(null);
 
     const fetchProfile = () => {
         fetch('/portfolio.json')
@@ -33,15 +37,22 @@ export const MainPage = memo(() => {
         fetchProfile();
     }, []);
 
-    console.log('profile', profile);
+    const handleScroll = () => {
+        projectRef.current?.scrollIntoView({
+            block: 'start',
+            behavior: 'smooth',
+        });
+    };
 
     return (
         <main className="main">
-            {/*<Promo />*/}
-            <About />
-            <Projects />
-            <Skills skills={profile.skills} />
-            <Experience />
+            <Promo onClick={handleScroll} />
+            <div ref={projectRef}>
+                <Projects projects={profile.projects} />
+                <Skills skills={profile.skills} />
+                <Experience experiences={profile.experiences} />
+                <About />
+            </div>
         </main>
     );
 });

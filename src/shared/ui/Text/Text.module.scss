@@ -41,7 +41,8 @@
 
 .size_s {
     .title {
-        font: var(--font-m);
+        font-size: 2.4rem;
+        //font: var(--font-size-m) / var(--font-line-m) var(--font-family-text);
     }
 
     .text {

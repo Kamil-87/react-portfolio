@@ -13,7 +13,8 @@
     color: var(--text);
 }
 
-.body {
+html, body {
+    font-family: 'Space Grotesk',sans-serif;
     font-size: 10px;
 }
 
@@ -22,8 +23,6 @@
 }
 
 .header {
-    background: var(--bg-inverse);
-    color: var(--text-inverse);
     width: 100%;
     height: var(--header-height);
 
@@ -32,14 +31,24 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        font-size: 2.5rem;
+    }
+
+    .header__logo {
+        display: flex;
+        align-items: center;
+
+        svg {
+            height: 3rem;
+            width: 3rem;
+        }
     }
 }
 
 .footer {
-    background: var(--bg-inverse);
-    color: var(--text-inverse);
     width: 100%;
     padding: 2rem 3rem;
+    font-size: 1.6rem;
 
     .footer__inner {
         display: flex;
@@ -48,12 +57,22 @@
 }
 
 .container {
-    max-width: 1780px;
+    max-width: 1280px;
     margin: 0 auto;
     padding: 0 15px;
 
     @media (min-width: 768px) {
         padding: 0 30px;
+    }
+}
+
+a {
+    @media(min-width: 768px)  {
+        transition: color 0.3s;
+
+        &:hover {
+            color: var(--red-light);
+        }
     }
 }
 
@@ -63,7 +82,7 @@
 }
 
 *::-webkit-scrollbar-track {
-    background: var(--light-bg);        /* цвет дорожки */
+    background: var(--main);        /* цвет дорожки */
 }
 
 *::-webkit-scrollbar-thumb {
@@ -87,3 +106,8 @@
     border: 2px solid var(--primary-color);  /* padding вокруг плашки */
 }
 
+.BgAnimation__svg {
+    @media screen and (max-width: 767.98px){
+        display: none;
+    }
+}

@@ -1,4 +1,6 @@
 .About {
+    font-size: 1.6rem;
+
     .container {
         display: grid;
         grid-template-columns: 1fr;
@@ -9,5 +11,13 @@
             grid-template-columns: 200px 1fr;
             column-gap: 4rem;
         }
+    }
+
+    .label {
+        display: flex;
+    }
+
+    .labelText {
+        margin-right: 0.5rem;
     }
 }

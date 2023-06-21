@@ -1,13 +1,14 @@
 .dark_theme {
-    --main: #424242;
+    //--primary: #f2f5f7;
+    --main: #0F1624;
     --secondary: #FBF4F4;
-    --accent: #2E2E2E;
+    --accent: #fec576;
 
     --bg: var(--main);
     --text: var(--secondary);
     --bg-inverse: var(--accent);
     --text-inverse: var(--secondary);
 
-
+    --color-h1: linear-gradient(121.57deg,#FFFFFF 18.77%,rgba(255,255,255,0.66) 60.15%);
 }
 

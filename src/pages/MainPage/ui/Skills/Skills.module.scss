@@ -1,3 +1,27 @@
 .Skills {
 
 }
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    padding: 3rem;
+    column-gap: 4rem;
+    row-gap: 2rem;
+    width: 100%;
+}
+
+.skill {
+    font-size: 1.6rem;
+    text-transform: capitalize;
+
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    font-size: 2rem;
+    margin-right: 1rem;
+    width: 2rem;
+    height: 2rem;
+}

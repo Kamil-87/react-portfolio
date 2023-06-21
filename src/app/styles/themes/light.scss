@@ -1,5 +1,5 @@
 .light_theme {
-    --main: #FBF4F4;
+    --main: #f5f5f5;
     --secondary: #424242;
     --accent: #2E2E2E;
 
@@ -7,4 +7,6 @@
     --text: var(--secondary);
     --bg-inverse: var(--accent);
     --text-inverse: var(--main);
+
+    --color-h1: linear-gradient(121.57deg,#000000 18.77%,rgba(0,0,0,0.66) 60.15%);
 }

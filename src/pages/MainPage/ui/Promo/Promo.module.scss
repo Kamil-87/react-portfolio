@@ -4,3 +4,103 @@
     align-items: center;
     justify-content: center;
 }
+
+.grid {
+    display: grid;
+    padding: 32px 48px 0;
+    margin: 0 auto;
+    max-width: 1040px;
+    box-sizing: content-box;
+    position: relative;
+    overflow: hidden;
+    grid-template-columns: 1fr 1fr;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 40px;
+    max-width: 100%;
+    background: var(--color-h1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 16px;
+    padding: 58px 0 16px;
+
+    @media screen and (min-width: 768px){
+        font-weight: 800;
+        font-size: 65px;
+        line-height: 72px;
+        width: max-content;
+    }
+}
+
+.description {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 300;
+    padding-bottom: 3.6rem;
+    color: var(--text);
+
+    @media screen and (min-width: 768px){
+        max-width: 800px;
+        font-size: 24px;
+        line-height: 40px;
+    }
+}
+
+.wrapBtn {
+    width: 262px;
+    height: 64px;
+    border-radius: 50px;
+    font-size: 24px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(270deg,#00DBD8 0%,#B133FF 100%);
+    cursor: pointer;
+    transition: 0.5s ease;
+    position: relative;
+    overflow: hidden;
+    opacity: 1;
+
+    .button {
+        border: none;
+        border-radius: 50px;
+        color: #fff;
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(270deg,#13ADC7 0%,#945DD6 100%);
+        opacity: 1;
+        transition: .4s ease;
+        font-size: 24px;
+        font-weight: 600;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        box-shadow: none;
+    }
+
+    &:hover {
+        .button {
+            background: none;
+        }
+    }
+}
+
+.contentWrap {
+    margin: 0 auto;
+    max-width: 1040px;
+    box-sizing: content-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.content {
+    width: 100%;
+}

@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.e949e3d9.css",
+    "main.js": "/react-portfolio/static/js/main.0476e909.js",
+    "static/media/kamil-kuchaev.jpg": "/react-portfolio/static/media/kamil-kuchaev.a5bdf5c7ad9847516ab7.jpg",
+    "static/media/my-portfolio.jpg": "/react-portfolio/static/media/my-portfolio.092d84f7538932d62599.jpg",
+    "static/media/user-filled.svg": "/react-portfolio/static/media/user-filled.81ae1b604d0b0e6ef371d7f0f077f0f2.svg",
+    "index.html": "/react-portfolio/index.html",
+    "main.e949e3d9.css.map": "/react-portfolio/static/css/main.e949e3d9.css.map",
+    "main.0476e909.js.map": "/react-portfolio/static/js/main.0476e909.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e949e3d9.css",
+    "static/js/main.0476e909.js"
+  ]
+}

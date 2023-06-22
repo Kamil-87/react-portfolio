@@ -1,7 +1,7 @@
 import React, { ReactNode, useEffect, useMemo, useState } from 'react';
 import { ThemeContext, Theme } from '../lib/ThemeContext';
 
-const LOCAL_STORAGE_THEME_KEY = 'theme'
+const LOCAL_STORAGE_THEME_KEY = 'theme';
 
 interface ThemeProviderProps {
     initialTheme?: Theme;
@@ -15,7 +15,7 @@ const ThemeProvider = (props: ThemeProviderProps) => {
     const [isThemeInit, setThemeInit] = useState(false);
 
     const [theme, setTheme] = useState<Theme>(
-        initialTheme || fallbackTheme || Theme.LIGHT,
+        initialTheme || fallbackTheme || Theme.DARK,
     );
 
     useEffect(() => {

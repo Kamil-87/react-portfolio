@@ -15,8 +15,6 @@ export const ProjectCard = memo((props: ProjectListItemProps) => {
     const { project } = props;
     const urlImg = `../../../../shared/assets/images/${project.image}`;
 
-    console.log('urlImg', urlImg);
-
     return (
         <Card className={cls.ProjectCard} padding="0">
             <div className={cls.imgWrap}>

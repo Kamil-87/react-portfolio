@@ -32,7 +32,7 @@ export const Experience = memo((props: { experiences: ExperienceSchema[] }) => {
                                         size="s"
                                         text={`${item.dateStart} - ${item.dateEnd}`}
                                     />
-                                    <a href={item.site}>{item.site}</a>
+                                    <a href={item.visit}>{item.visit}</a>
                                     <div>{item.description}</div>
                                 </VStack>
                             </Card>

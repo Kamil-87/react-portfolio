@@ -4,27 +4,21 @@ import { Experience } from './Experience/Experience';
 import { Skills } from './Skills/Skills';
 import { Projects } from './Project/Projects';
 import { memo, useEffect, useRef, useState } from 'react';
-import { AboutSchema, ProfileSchema } from '../model/types/MainPageShema';
-
-const initAbout: AboutSchema = {
-    name: '',
-    title: '',
-    description: '',
-    image: '',
-};
+import { ProfileSchema } from '../model/types/MainPageShema';
+import { portfolio } from '../../../shared/assets/const/portfolio';
 
 export const MainPage = memo(() => {
     const [profile, setProfile] = useState<ProfileSchema>({
-        about: initAbout,
-        skills: [],
-        experiences: [],
-        projects: [],
+        about: portfolio.about,
+        skills: portfolio.skills,
+        experiences: portfolio.experiences,
+        projects: portfolio.projects,
     });
 
     const projectRef = useRef<HTMLDivElement>(null);
 
-    const fetchProfile = () => {
-        fetch('/portfolio.json')
+    /*    const fetchProfile = () => {
+        fetch('../model/json/portfolio.json')
             .then((response) => {
                 return response.json();
             })
@@ -35,7 +29,7 @@ export const MainPage = memo(() => {
 
     useEffect(() => {
         fetchProfile();
-    }, []);
+    }, []);*/
 
     const handleScroll = () => {
         projectRef.current?.scrollIntoView({
@@ -51,7 +45,7 @@ export const MainPage = memo(() => {
                 <Projects projects={profile.projects} />
                 <Skills skills={profile.skills} />
                 <Experience experiences={profile.experiences} />
-                <About />
+                <About about={profile.about} />
             </div>
         </main>
     );

@@ -6,8 +6,13 @@ import { Avatar } from '../../../../shared/ui/Avatar';
 import { Text } from '../../../../shared/ui/Text';
 import { HStack, VStack } from '../../../../shared/ui/Stack';
 import { SectionDivider } from '../../../../shared/ui/SectionDivider';
+import { AboutSchema } from '../../model/types/MainPageShema';
 
-export const About = () => {
+export const About = (props: { about: AboutSchema }) => {
+    const { about } = props;
+
+    console.log('about', about);
+
     return (
         <Section className={classNames(cls.About, {}, [])}>
             <VStack max gap="32" align={'center'}>
